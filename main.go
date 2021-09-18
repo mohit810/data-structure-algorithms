@@ -39,8 +39,8 @@ func main() {
 	res, ascendingHeapSort := sort.HeapSort(slice)
 	fmt.Println("Ascending order Heap Sort -> ", res, "\n Time Complexity -> \n Best -> ", ascendingHeapSort.BestCase, "\n Average -> ", ascendingHeapSort.AverageCase, "\n Worst -> ", ascendingHeapSort.WorstCase, "\n Space Complexity -> ", ascendingHeapSort.Space)
 
-	fmt.Println("Binary Search Tree ->")
+	fmt.Println(" Binary Search Tree ->")
 	inOrder, preOrder, postOrder, bstResult := tree.CreateBST(slice)
 	fmt.Println(" InOrder -> ", inOrder, "\n PreOrder -> ", preOrder, "\n PostOrder -> ", postOrder)
-	fmt.Println("\n Time Complexity -> \n Search --> \n Average -> ", bstResult.SearchAverageCase, "\n Worst -> ", bstResult.SearchWorstCase, "\n Insert --> \n Average -> ", bstResult.InsertAverageCase, "\n Worst -> ", bstResult.InsertWorstCase, "\n Delete --> \n Average -> ", bstResult.DeleteAverageCase, "\n Worst -> ", bstResult.DeleteWorstCase, "\n Space Complexity -> ", bstResult.Space)
+	fmt.Println(" Time Complexity -> \n Search --> Average -> ", bstResult.SearchAverageCase, " Worst -> ", bstResult.SearchWorstCase, "\n Insert --> Average -> ", bstResult.InsertAverageCase, " Worst -> ", bstResult.InsertWorstCase, "\n Delete --> Average -> ", bstResult.DeleteAverageCase, " Worst -> ", bstResult.DeleteWorstCase, "\n Space Complexity -> ", bstResult.Space)
 }
